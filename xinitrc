@@ -1,3 +1,4 @@
+nm-applet &
 /usr/libexec/polkit-mate-authentication-agent-1 &
 slstatus &
 ~/.fehbg &
