@@ -1,0 +1,19 @@
+[window]
+
+opacity = 0.6
+
+padding.x = 10
+padding.y = 10
+
+decorations = "None"
+decorations_theme_variant = "Dark" # "Dark"
+
+[font]
+
+normal.family = "JetBrainsMono NF"
+bold.family = "JetBrainsMono NF"
+italic.family = "JetBrainsMono NF"
+bold_italic.family = "JetBrainsMono NF"
+
+size = 13.0
+
