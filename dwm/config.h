@@ -16,7 +16,7 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#25591f";
+static const char col_cyan[]        = "#138d75";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -67,7 +67,8 @@ static const char *mutecmd[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "t
 static const char *volupcmd[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
 static const char *voldowncmd[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 static const char *pvc[]  = { "pavucontrol", NULL };
-
+static const char *fm[] = { "pcmanfm", NULL};
+static const char *browser[] = { "firefox", NULL};
 
 
 #include <X11/XF86keysym.h>
@@ -113,6 +114,8 @@ static const Key keys[] = {
         { 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
         { 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd }   },
         { MODKEY,                       XK_w,      spawn,          {.v = pvc} },
+        { MODKEY,                       XK_e,      spawn,          {.v = browser} },
+        { MODKEY,                       XK_q,      spawn,          {.v = fm} },
 };
 
 /* button definitions */
